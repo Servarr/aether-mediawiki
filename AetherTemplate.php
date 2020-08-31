@@ -364,7 +364,7 @@ class AetherTemplate extends BaseTemplate {
               }
 
               if ( $hook !== null ) {
-                wfRunHooks( $hook, array( &$this, true ) );
+                Hooks::run( $hook, array( &$this, true ) );
               }
             echo "</ul>";
           } else {
